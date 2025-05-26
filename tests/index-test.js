@@ -85,6 +85,18 @@ describe('current-device', () => {
       })
     })
 
+    describe('Harmony', () => {
+      it('Exposes a `harmony` function', () => {
+        expect(device.harmony).toBeA('function')
+      })
+      it('Exposes a `harmonyPhone` function', () => {
+        expect(device.harmonyPhone).toBeA('function')
+      })
+      it('Exposes a `harmonyTablet` function', () => {
+        expect(device.harmonyTablet).toBeA('function')
+      })
+    })
+
     describe('Other', () => {
       it('Exposes a `meego` function', () => {
         expect(device.meego).toBeA('function')
